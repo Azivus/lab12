@@ -1,12 +1,14 @@
-Лабораторна робота 12. Взаємодія з користувачем шляхом механізму введення/виведення
+# **Лабораторна робота 12. Взаємодія з користувачем шляхом механізму введення/виведення**
 
-Панкеєв Владислав Олексійович 922-Б
+# **Панкеєв Владислав Олексійович 922-Б**
 
-Множення матрць
+## **Множення матрць**
 
-Основна частина:
-Вміст файлу main.c
+## **Основна частина:**
 
+### **Вміст файлу main.c**
+
+```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -179,8 +181,10 @@ int main()
 
 	return 0;
 }
+```
 
-lib.c
+### **Вміст файлу lib.c**
+```
 
 #include <stdio.h>
 #include <string.h>
@@ -202,12 +206,15 @@ int mul_matrix(float **matrix1, float **matrix2, float **result_mul_matrix, unsi
 	
 	return 0;
 }
-
-lib.h
+```
+### **Вміст файлу lib.h**
+```
 
 int mul_matrix(float **a, float **b, float **c, unsigned int d, unsigned int e, unsigned int f);
+```
 
-test.c
+### **Вміст файлу test.c**
+```
  
 #include "../src/lib.h"
 #include <stdlib.h>
@@ -502,8 +509,10 @@ int main(void)
 
 	return (number_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;
 }
+```
 
-Результат
+### **Результат**
+```
 
 Введіть кількість строк та кількість стовпців через ":" для першої матриці:
 Введіть кількість строк та кількість стовпців через ":" для другої матриці:
@@ -515,8 +524,10 @@ int main(void)
 [ 15.00  22.00 ]
 
 Як що ви хочите повторити операцію то введіть 1, для виходу з програми введіть 0:
-Результат тесту та покриття коду
+```
 
+### **Результат тесту та покриття коду**
+```
 Running suite(s): lab12
 100%: Checks: 3, Failures: 0, Errors: 0
 llvm-profdata merge -sparse dist/test.profraw -o dist/test.profdata
@@ -526,10 +537,10 @@ Filename                                         Regions    Missed Regions     C
 /home/labaproga/lab12/src/lib.c          10                 0   100.00%           1                 0   100.00%          11                 0   100.00%           6                 0   100.00%
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TOTAL                                                 10                 0   100.00%           1                 0   100.00%          11                 0   100.00%           6                 0   100.00%
+```
 
-
-Дослідження витоків
-
+### **Дослідження витоків**
+```
 ==41139== Memcheck, a memory error detector
 ==41139== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
 ==41139== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
@@ -545,11 +556,12 @@ TOTAL                                                 10                 0   100
 ==41139==
 ==41139== For lists of detected and suppressed errors, rerun with: -s
 ==41139== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
 
 ----------------------------------------------------------------------------
 
-Структура проекту лабораторної роботи:
-   
+### **Структура проекту лабораторної роботи:**
+```   
 ├── assets
 │   └── text.txt
 ├── Doxyfile
@@ -561,3 +573,4 @@ TOTAL                                                 10                 0   100
     ├── lib.c
     ├── lib.h
     └── main.c
+```
