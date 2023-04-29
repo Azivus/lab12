@@ -574,7 +574,7 @@ TOTAL                                                 10                 0   100
     ├── lib.h
     └── main.c
 ```
-
+![Memory leak result](https://github.com/Azivus/lab12/blob/main/photo_2023-04-29_09-55-38.jpg)
 
 
 
