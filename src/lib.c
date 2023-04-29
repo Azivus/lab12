@@ -47,6 +47,6 @@ void mul_matrix(float **matrix1, float **matrix2, float **result_mul_matrix, uns
 		}
 	}
 	
-	return 0;
+	
 
 }
