@@ -181,7 +181,7 @@ int main()
 
 	return 0;
 }
-```c
+```
 
 ### **Вміст файлу lib.c**
 ```c
@@ -206,12 +206,12 @@ int mul_matrix(float **matrix1, float **matrix2, float **result_mul_matrix, unsi
 	
 	return 0;
 }
-```c
+```
 ### **Вміст файлу lib.h**
 ```c
 
 int mul_matrix(float **a, float **b, float **c, unsigned int d, unsigned int e, unsigned int f);
-```c
+```
 
 ### **Вміст файлу test.c**
 ```c
@@ -509,7 +509,7 @@ int main(void)
 
 	return (number_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;
 }
-```c
+```
 
 ### **Результат**
 ```
